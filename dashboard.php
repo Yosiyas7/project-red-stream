@@ -8,7 +8,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 $servername = "localhost";
 $username = "root";
-$dbpassword = "";
+$dbpassword = ""; 
 $dbname = "redstream_db";
 $conn = new mysqli($servername, $username, $dbpassword, $dbname);
 if ($conn->connect_error) {
